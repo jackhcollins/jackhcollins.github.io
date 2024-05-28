@@ -8,8 +8,9 @@ categories: Interpretability
 
 bibliography: 2018-12-22-distill.bib
 
-toc: Introduction
-toc: Next section
+toc:
+  -name: Introduction
+  -name: Next section
 ---
 
 ## Introduction
@@ -21,7 +22,7 @@ $$C = 7/2$$
 This follows from counting 7 degrees of freedom: 3 translational, 2 rotational, 2 vibrational. For a monatomic gas such as Helium, the result would be $C=3/2$ from three translational degrees of freedom.
 
 <div class="row mt-3">
-    <div class="col-md-8 mt-3 mt-md-0">
+    <div class="col-md-12 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/img2610.gif" class="img-fluid" zoomable=true %}
     </div>
 </div>
