@@ -637,36 +637,37 @@ footer.sticky-bottom {
 
 //Talks
 
-.talks{
-    margin-top: 1rem;
-    h1 {
-	color: var(--global-theme-color);
-	font-size: 2rem;
-	text-align: center;
-	margin-top: 1em;
-	margin-bottom: 1em;
+.talks {
+  margin-top: 1rem;
+  h1 {
+    color: var(--global-theme-color);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  h2 {
+    margin-bottom: 1rem;
+    span {
+      font-size: 1.5rem;
     }
-    h2 {
-	margin-bottom: 1rem;
-	span {
-	    font-size: 1.5rem;
-	}
-    }
-    h2.talk_topic {
-	margin-bottom: 0.8rem;
-	font-size: 1.25rem;
-	font-weight: bolder;
-    }
+  }
+  h2.talk_topic {
+    margin-bottom: 0.8rem;
+    font-size: 1.25rem;
+    font-weight: bolder;
+  }
 
-    ol.bibliography {
-	list-style: none;
-	padding: 0;
-	margin-top: 0;
+  ol.bibliography {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
 
-	li {margin-bottom: 0.25rem;
-	    list-style: none;
-	   }
+    li {
+      margin-bottom: 0.25rem;
+      list-style: none;
     }
+  }
 }
 
 // Publications
@@ -690,9 +691,9 @@ footer.sticky-bottom {
     }
   }
   h2.talk_topic {
-      margin-bottom: 1rem;
-      font-size: 0.85rem;
-      font-weight: bolder;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    font-weight: bolder;
   }
   h2.year {
     color: var(--global-divider-color);

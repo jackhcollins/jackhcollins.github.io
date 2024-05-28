@@ -7,13 +7,13 @@ description:
 
 profile:
   align: right
-  image: prof_pic.jpg			
+  image: prof_pic.jpg
   address: >
     <p>2575 Sand Hill Rd</p>
     <p>Mailstop 0081</p>
     <p>Menlo Park, CA 94025</p>
 
-news: false  # includes a list of news items
+news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
