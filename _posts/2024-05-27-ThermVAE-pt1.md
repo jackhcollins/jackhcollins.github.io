@@ -27,6 +27,8 @@ This follows from counting 7 degrees of freedom: 3 translational, 2 rotational, 
     </div>
 </div>
 
+---
+
 ## Next Section
 
 <!--
