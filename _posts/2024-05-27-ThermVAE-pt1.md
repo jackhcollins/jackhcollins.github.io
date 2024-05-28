@@ -1,10 +1,11 @@
 ---
 layout: distill
 title: Thermodynamics of a VAE
-date: 2024-05-27
 description: Here is a description of the post
-tags: VAE, thermodynamics
-categories: Interpretability
+tags: VAE, Thermodynamics, Interpretability
+giscus_comments: false
+date: 2024-05-27
+featured: false
 
 bibliography: 2018-12-22-distill.bib
 
