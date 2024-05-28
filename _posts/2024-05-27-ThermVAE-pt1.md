@@ -7,10 +7,10 @@ giscus_comments: false
 date: 2024-05-27
 featured: false
 
-authors:
-  - name: Jack Collins
-    affiliations:
-      name: Bosch Center for Artificial Intelligence
+# authors:
+#   - name: Jack Collins
+#     affiliations:
+#       name: Bosch Center for Artificial Intelligence
 
 bibliography: 2018-12-22-distill.bib
 
