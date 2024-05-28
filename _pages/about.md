@@ -1,7 +1,7 @@
 ---
 layout: about
 title: about
-order: 1
+nav_order: 1
 permalink: /
 description:
 
