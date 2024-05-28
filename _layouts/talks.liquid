@@ -1,27 +1,27 @@
 ---
 layout: default
 ---
-{%- if page.month -%}
-  {%- capture entrymonth -%}{{ " " }}{{ page.month | capitalize }}{%- endcapture -%}
+{%- if entry.month -%}
+  {%- capture entrymonth -%}{{ " " }}{{ entry.month | capitalize }}{%- endcapture -%}
 {%- endif -%}
-{%- if page.year -%}
-  {%- capture entryyear -%}{{ " " }}{{ page.year }}{%- endcapture -%}
+{%- if entry.year -%}
+  {%- capture entryyear -%}{{ " " }}{{ entry.year }}{%- endcapture -%}
 {%- endif -%}
-{%- if page.venue -%}
-  {%- capture entryvenue -%}{{ ": &emsp;" }}{{ page.venue }}{%- endcapture -%}
+{%- if entry.venue -%}
+  {%- capture entryvenue -%}{{ ": &emsp;" }}{{ entry.venue }}{%- endcapture -%}
 {%- endif -%}
 {%- capture periodical -%}{{ entrymonth }}{{ entryyear }}{{ entryvenue }}{%- endcapture -%}
 <div class="periodical" style="display: inline">
   {{ periodical | strip }}
-  {%- if page.slides %}
-    {% if page.slides contains '://' -%}
-      &ensp;<a href="{{ page.slides }}">[Slides]</a>
+  {%- if entry.slides %}
+    {% if entry.slides contains '://' -%}
+      &ensp;<a href="{{ entry.slides }}">[Slides]</a>
     {%- else -%}
-      &ensp;<a href="{{ page.slides | prepend: '/assets/pdf/' | relative_url }}">[Slides]</a>
+      &ensp;<a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}">[Slides]</a>
     {%- endif %}
   {%- endif %}
-  {%- if page.video %}
-    &ensp;<a href="{{ page.video }}">[Video]</a>
+  {%- if entry.video %}
+    &ensp;<a href="{{ entry.video }}">[Video]</a>
   {%- endif %}
 </div>
 
