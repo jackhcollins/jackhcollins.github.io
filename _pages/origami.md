@@ -5,9 +5,10 @@ order: 5
 permalink: /origami/
 description: My folds
 nav: true
-display_categories: 
+display_categories:
 horizontal: false
 ---
+
 <div class="projects">
   {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
@@ -20,39 +21,41 @@ horizontal: false
         <div class="container">
           <div class="row row-cols-2">
           {% for project in sorted_projects %}
-            {% include projects_horizontal.html %}
+            {% include projects_horizontal.liquid %}
           {% endfor %}
           </div>
         </div>
       {% else %}
         <div class="grid">
           {% for project in sorted_projects %}
-            {% include projects.html %}
+            {% include projects.liquid %}
           {% endfor %}
         </div>
       {% endif %}
     {% endfor %}
 
-  {% else %}
+{% else %}
+
   <!-- Display projects without categories -->
+
     {% assign sorted_projects = site.projects | sort: "importance" %}
     <!-- Generate cards for each project -->
     {% if page.horizontal %}
       <div class="container">
         <div class="row row-cols-2">
         {% for project in sorted_projects %}
-          {% include projects_horizontal.html %}
+          {% include projects_horizontal.liquid %}
         {% endfor %}
         </div>
       </div>
     {% else %}
       <div class="grid">
         {% for project in sorted_projects %}
-          {% include projects.html %}
+          {% include projects.liquid %}
         {% endfor %}
       </div>
     {% endif %}
 
-  {% endif %}
+{% endif %}
 
 </div>
