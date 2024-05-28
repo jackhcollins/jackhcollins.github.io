@@ -11,14 +11,13 @@ The equipartition theorem in Thermodynamics plays a central role in determining 
 
 $$C = 7/2$$
 
-This follows from counting 7 degrees of freedom: 3 translational, 2 rotational, 2 vibrational. For a monatomic gas such as Helium, the result would be $C=3/2$ from three translational degrees of freedom. 
+This follows from counting 7 degrees of freedom: 3 translational, 2 rotational, 2 vibrational. For a monatomic gas such as Helium, the result would be $C=3/2$ from three translational degrees of freedom.
 
 <div class="row mt-3">
     <div class="col-md-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/img2610.gif" class="img-fluid" zoomable=true %}
+        {% include figure.liquid path="assets/img/img2610.gif" class="img-fluid" zoomable=true %}
     </div>
 </div>
-
 
 There are deep connections between Thermodynamics and Variational Inference that in principle are quite well understood, but there are facets of the connection that haven't been properly explored. For me, one of the most fascinating aspects of introductory thermodynamics is the equipartition theorem and its relation to heat capacity. Consider a simple molecular gas like $H_2$. You can think of each $H_2$ molecule as a pair of hydrogen atoms connected by a simple spring that oscillates about some equilibrium displacement, and the gas as a large collection of $H_2$ molecules that are constantly colliding with eachother. Each collision between a pair of molecules will result in some changes in their individual velocities and oscillation rates, but with overall energy being conserved then the net effect of many of these collisions is a randomization of the energy distribution between the various dynamical degrees of freedom. If you were to initialize the system such that all $H_2$ molecules were moving about but their springs were not vibrating and then waited for a while, evntually you would find that much of that kinetic energy has been redistributied into vibrational energy inside the molecules. The equipartition theorem is essentially a formalization of this intuition: for a system in thermodynamic equilibrium\footnote{test}, the total energy budget of the system will be distributed equally between all of the dynamical degrees of freedom.
 
